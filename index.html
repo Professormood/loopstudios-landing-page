@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      .attribution {
+        font-size: 15px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav relative mx-auto">
+      <!-- flex container -->
+      <div class="flex justify-between px-10 py-20  items-center">
+        <!-- logo -->
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <!-- menu links -->
+        <div class="hidden md:flex space-x-6">
+          <a
+            href=""
+            class="text-White text-lg hover:bg-transparent inline-block duration-150 transition"
+            >About</a
+          >
+          <a href="" class="text-White text-lg">Careers</a>
+          <a href="" class="text-White text-lg">Events</a>
+          <a href="" class="text-White text-lg">Products</a>
+          <a href="" class="text-White text-lg">Support</a>
+           
+        </div>
+        <button class=" hamburger block  md:hidden focus:outline-none " id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+        
+      <div class="px-10 container py-24 mx-5 my-1.5 md:px-24 md:py-24 md:mx-16">
+        <h1
+          class="text-White text-3xl px-10 py-5 leading-10 tracking-wider uppercase font-light max-w-2xl border-2 text-center md:text-6xl md:text-left md:px-24 md:font-extralight"
+        >
+          Immersive experiences that deliver
+        </h1>
+      </div>
+      <div class="md:hidden bg-White ">
+        <div id="menu" class="absolute flex-col text-center hidden  self-end py-8 bottom-16 bg-White space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section
+      class="flex flex-col py-20 container mx-auto relative md:py-24 md:px-24 md:flex-row"
+      id="Hero"
+    >
+      <div class="container">
+        <img src="./images/desktop/image-interactive.jpg" alt="" />
+      </div>
+      <div
+        class="flex flex-col mx-auto max-w-lg px-12 py-10 bottom-16 right-72 text-center md:text-left md:absolute bg-White"
+      >
+        <h1
+          class="text-Black uppercase text-4xl mb-8 font-light tracking-wider md:mb-10 md:text-5xl"
+        >
+          The leader in interactive VR
+        </h1>
+        <p
+          class="text-VeryDarkGray font-alatas text-md text-center md:text-left"
+        >
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </section>
+    <!-- CREATION AND BUTTON -->
+    <div
+      class="container mx-auto items-center text-center py-5 md:justify-between md:flex md:flex-row"
+    >
+      <h1
+        class="text-5xl uppercase text-center font-light md:text-left md:text-6xl"
+      >
+        Our creations
+      </h1>
+      <button
+        class="hidden border px-4 py-1 hover:bg-Black hover:text-White transition duration-300 md:block"
+      >
+        SEE ALL
+      </button>
+    </div>
+
+    <!-- Grid section -->
+    <section
+      class="flex flex-col py-10 px-5 items-center uppercase  justify-center mx-auto container gap-5 md:flex-col md:px-10"
+    >
+      <div class="flex flex-col gap-5 md:flex-row">
+        <div class="">
+          <a href="#" class="relative ">
+            <picture class=" col-span-full row-span-full hover:">
+              <source 
+                srcset="images/desktop/image-deep-earth.jpg"
+                media="(min-width: 960px)"
+              />
+              <img src="images/mobile/image-deep-earth.jpg" />
+            </picture>
+            <h4
+              class="z-10 absolute row-start-2 ml-5 text-2xl text-White bottom-10 left-10 "
+            >
+              Deep <br />
+              Earth
+            </h4>
+          </a>
+        </div>
+        <!-- second -->
+        <div>
+          <a href="#" class="relative">
+            <picture class="relative col-span-full row-span-full">
+              <source
+                srcset="images/desktop/image-night-arcade.jpg"
+                media="(min-width: 960px)"
+              />
+              <img src="images/mobile/image-night-arcade.jpg" />
+            </picture>
+            <h4
+              class="z-10 absolute row-start-2 ml-5 text-2xl text-White bottom-10 left-10"
+            >
+            Night <br> 
+            arcade
+              
+            </h4>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="relative">
+            <picture class="relative col-span-full row-span-full">
+              <source
+                srcset="images/desktop/image-soccer-team.jpg"
+                media="(min-width: 960px)"
+              />
+              <img src="images/mobile/image-soccer-team.jpg" />
+            </picture>
+            <h4
+              class="z-10 absolute row-start-2 ml-5 text-2xl text-White bottom-10 left-10"
+            >
+            Soccer <br>
+             team VR
+            </h4>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="relative">
+            <picture class="relative col-span-full row-span-full">
+              <source
+                srcset="images/desktop/image-grid.jpg"
+                media="(min-width: 960px)"
+              />
+              <img src="images/mobile/image-grid.jpg" />
+            </picture>
+            <h4
+              class="z-10 absolute row-start-2 ml-5 text-2xl text-White bottom-10 left-10"
+            >
+              The grid
+            </h4>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-5 md:flex-row">
+        <div>
+          <a href="#" class="relative">
+            <picture class="relative col-span-full row-span-full">
+              <source
+                srcset="images/desktop/image-from-above.jpg"
+                media="(min-width: 960px)"
+              />
+              <img src="images/mobile/image-from-above.jpg" />
+            </picture>
+            <h4
+              class="z-10 absolute row-start-2 ml-5 text-2xl text-White bottom-5 left-10"
+            >
+            From <br> up above <br> VR
+            </h4>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="relative">
+            <picture class="relative col-span-full row-span-full">
+              <source
+                srcset="images/desktop/image-pocket-borealis.jpg"
+                media="(min-width: 960px)"
+              />
+              <img src="images/mobile/image-pocket-borealis.jpg" />
+            </picture>
+            <h4
+              class="z-10 absolute row-start-2 ml-5 text-2xl text-White bottom-10 left-10"
+            >
+            Pocket <br> borealis
+            </h4>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="relative">
+            <picture class="relative col-span-full row-span-full">
+              <source
+                srcset="images/desktop/image-curiosity.jpg"
+                media="(min-width: 960px)"
+              />
+              <img src="images/mobile/image-curiosity.jpg" />
+            </picture>
+            <h4
+              class="z-10 absolute row-start-2 ml-5 text-2xl text-White bottom-10 left-10"
+            >
+            The curiosity
+            </h4>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="relative">
+            <picture class="relative col-span-full row-span-full">
+              <source
+                srcset="images/desktop/image-fisheye.jpg"
+                media="(min-width: 960px)"
+              />
+              <img src="images/mobile/image-fisheye.jpg" />
+            </picture>
+            <h4
+              class="z-10 absolute row-start-2 ml-5 text-2xl text-White bottom-10 left-10"
+            >
+            Make it <br> 
+            fisheye
+            </h4>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="flex flex-col justify-between px-24 py-10 items-center md:flex-row bg-Black">
+      <div class="flex flex-col gap-5 mb-5 md:mb-0">
+        <img src="./images/logo.svg" alt="logo">
+        <div class="flex flex-col text-center text-White gap-5 md:flex-row ">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">products</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+      <div class="items-center flex flex-col">
+        <div class="flex gap-5 mb-10 ">
+          <a href="#"><img src="./images/icon-facebook.svg" alt="icon-facebook"></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="icon-facebook"></a>
+          <a href="#"><img src="./images/icon-pinterest.svg" alt="icon-facebook"></a>
+          <a href="#"><img src="./images/icon-instagram.svg" alt="icon-facebook"></a>
+        </div>
+        <p class="text-DarkGray text-center">
+          © 2021 Loopstudios. All rights reserved.
+        </p>
+        
+      </div>
+    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Santosh Das</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
